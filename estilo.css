@@ -48,12 +48,12 @@ h1 {
 }
 
 /* Media query para tamaños de pantalla hasta 414px (iPhone 12) */
-@media screen and (max-width: 414px) {
-  /* Reducir el tamaño de la fuente para que se ajuste en pantallas pequeñas */
-  th, td {
-    font-size: 12px;
+@media (max-width: 767px) {
+  body {
+      font-size: 14px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
   }
 }
+
 
 
 
