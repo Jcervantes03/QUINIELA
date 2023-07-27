@@ -9,13 +9,19 @@
     <div class="logo-container">
       <img src="LOGO.png" >
     </div>
-<body>
+   
     <h1 id="Titulo">Quiniela de Fútbol</h1>
     <!-- <form id="registrationForm">
         <input type="text" id="name" placeholder="Nombre">
         <input type="number" id="aciertos" placeholder="Aciertos">
         <input type="submit" value="Registrar"> 
     </form> -->
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <button type="button" onclick="agregarNombre()">Agregar</button>
+    </form>
+<body>
 
     <div id="tableContainer">
         <table id="userTable">
