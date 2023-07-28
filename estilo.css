@@ -2,7 +2,7 @@
 table {
   border-collapse: collapse;
   width: 100%;
-  margin: 20px auto;
+  margin: 10px auto;
   max-width: 500px; /* Ancho máximo de la tabla */
   color: black; /* Letras de la tabla en color negro */
 }
@@ -25,36 +25,75 @@ body {
   text-align: center;
   background-color: #07177D; /* Color de fondo azul */
   color: white; /* Texto blanco */
+  padding-top: 40px; /* Espacio en la parte superior */
 }
 
 /* Estilos para el título */
 h1 {
   color: #dddddd; /* Letras del título en color gris claro */
   font-size: 22px;
-  text-align: left; /* Alineación del h1 al lado izquierdo */
-  margin-left: 20px; /* Margen izquierdo para el h1 */
+  text-align: left; /* Alineación del h1 al centro */
+  margin-bottom: 20px; /* Margen inferior para el h1 */
+  margin-top: -17px; /* Eliminamos el margen superior */
+  margin-left: 22px;
 }
 
 /* Estilos para el logotipo */
 .logo-container {
-  position: absolute;
-  top: 18.5px;
-  right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  margin-top: -10px; /* Ajustamos el margen superior para subir el logo */
 }
 
 .logo-container img {
-  width: 120px;
+  width: 100px;
   height: auto;
 }
 
-/* Media query para tamaños de pantalla hasta 414px (iPhone 12) */
-@media (max-width: 767px) {
+/* Media query para tamaños de pantalla hasta 414px (iPhone 11) */
+@media (max-width: 414px) {
   body {
-      font-size: 14px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    font-size: 16px; /* Tamaño de fuente ligeramente más grande para pantallas pequeñas */
+  }
+
+  h1 {
+    font-size: 20px; /* Tamaño de fuente más grande para el h1 en pantallas pequeñas */
+  }
+
+  table {
+    max-width: 100%; /* Ancho máximo de la tabla para pantallas pequeñas */
   }
 }
+/* Estilos para el formulario */
+#registerForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
+/* Estilos para los campos del formulario */
+#registerForm label, #registerForm input {
+  margin: 5px;
+}
 
+/* Estilos para el botón de registro */
+#registerForm button {
+  margin: 5px;
+}
 
+/* Media query para tamaños de pantalla hasta 414px (iPhone 11) */
+@media (max-width: 414px) {
+  /* ... (Los estilos para la tabla ya están definidos en el media query anterior) */
 
-  
+  /* Estilos para el formulario en pantallas pequeñas */
+  #registerForm {
+    flex-direction: column;
+  }
+
+  /* Estilos para los campos del formulario en pantallas pequeñas */
+  #registerForm label, #registerForm input {
+    margin: 5px 0;
+  }
+}
